@@ -6,10 +6,13 @@ Console.WriteLine("Введите треx3начное число: ");
 string numb = Console.ReadLine();
 int number;
 number = int.Parse(numb);
-if(number<<1000 & number>99)
-    {
-        int lastDigit = number%10;
-        Console.WriteLine ("lastDigit="+lastDigit);
-    }
+if(number < 1000 & number > 99)
+{
+    int lastDigit = number % 10;
+    Console.WriteLine ("lastDigit=" + lastDigit);
+}
 else
-        Console.WriteLine("LastDigit not three digits");
+{
+    Console.WriteLine("LastDigit not three digits");
+}
+        
